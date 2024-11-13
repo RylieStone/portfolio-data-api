@@ -8,10 +8,16 @@
 
 ## Project Set Up
 
-- Fork, clone, and `npm install`.
+- clone and `npm install`.
 - Run tests locally executing `npm test`.
 - Start the server using `npm run server` or `npm run start`
 
 ## Project Instructions
 
-Start the server of the api and use the endpoint `localhost:9000/data/github` to pull in the projects specified
+Start the server of the api and use the endpoint `localhost:9000/data/github` to pull in the projects public to the github account in the .env file
+
+## Future Updates
+
+If youd like to add on to the API to pull in from other sources as well, like linked in.
+Create a issue asking for the implementation and i will integrate it into a future update.
+If you notice or find any bugs, please let me know for them to be patched, Thankyou.
