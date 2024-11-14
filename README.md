@@ -20,24 +20,7 @@ Start the server of the api and use the endpoint `localhost:9000/data/github` to
 ## /data/github endpoint
 
 When making a get request to this endpoint it will return a array list of all the projects the user specidied in the .env file has publically available.
-when calling the enpoint it will return a array of objects that will look like
-{
-      id: the id of the project
-      name: the name of the project
-      html_url: the html URL of the project
-      description: the description of the project
-      homepage: the home page of the project
-      size: the size of the project
-      stargazers_count: the amount of star gazers on a project
-      watchers_count: the amount of watchers on a project
-      language: the language a project is in
-      open_issues: the amount of open issues the project has
-      forks: the amount of forks made
-      archived: true/false whether or not the project is archived
-      disabled: true/false whether or not the project is disabled
-      watchers: amount of watchers on the project
-      license: project license
-    }
+when calling the enpoint it will return a array of objects each object being a individual project with relative information and a html link to the project.
 
 ## Future Updates
 
