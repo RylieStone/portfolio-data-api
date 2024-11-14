@@ -14,6 +14,7 @@
 
 ## Project Instructions
 
+create a .env file using the example .env file provided and fill in the data with your own
 Start the server of the api and use the endpoint `localhost:9000/data/github` to pull in the projects public to the github account in the .env file
 
 ## Future Updates
