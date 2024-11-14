@@ -9,7 +9,6 @@
 ## Project Set Up
 
 - clone and `npm install`.
-- Run tests locally executing `npm test`.
 - Start the server using `npm run server` or `npm run start`
 
 ## Project Instructions
