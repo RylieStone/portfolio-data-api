@@ -24,7 +24,6 @@ async function github(GithubUsername) {
       watchers_count: project.watchers_count,
       language: project.language,
       open_issues: project.open_issues,
-      open_issues_count: project.open_issues_count,
       forks: project.forks,
       archived: project.archived,
       disabled: project.disabled,
