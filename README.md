@@ -17,6 +17,10 @@
 create a .env file using the example .env file provided and fill in the data with your own
 Start the server of the api and use the endpoint `localhost:9000/data/github` to pull in the projects public to the github account in the .env file
 
+## /data/github endpoint
+
+When making a get request to this endpoint it will return a array list of all the projects the user specidied in the .env file has publically available.
+
 ## Future Updates
 
 If youd like to add on to the API to pull in from other sources as well, like linked in.
