@@ -6,9 +6,11 @@ module.exports = {
 async function github(GithubUsername) {
   let repos = []
   let projects = []
+  
   await axios.get(`https://api.github.com/users/${GithubUsername}/repos`).then(res => {
     repos = [...res.data]
   }).catch(err => console.log(err))
+
   for (let i in repos) {
     let project = repos[i]
     projects.push({
@@ -23,7 +25,6 @@ async function github(GithubUsername) {
       language: project.language,
       open_issues: project.open_issues,
       open_issues_count: project.open_issues_count,
-      fork_count: project.fork_count,
       forks: project.forks,
       archived: project.archived,
       disabled: project.disabled,
@@ -31,13 +32,5 @@ async function github(GithubUsername) {
       license: {...project.license}
     })
   }
-  return GithubUsername
+  return projects
 }
-//   license: {
-//     key: 'mit',
-//     name: 'MIT License',
-//     spdx_id: 'MIT',
-//     url: 'https://api.github.com/licenses/mit',
-//     node_id: 'MDc6TGljZW5zZTEz'
-//   },
-//   watchers: 0,
